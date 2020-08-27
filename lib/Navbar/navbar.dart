@@ -32,14 +32,28 @@ class DesktopNavbar extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pushReplacementNamed('/home');
               },
-              child: FlutterLogo(
-                colors: Colors.green,
-                size: 25.0,
+              child: Row(
+                children: [
+                  Container(
+                    width: 95.0,
+                    height: 55.0,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Logo%20(1).png'),
+                            fit: BoxFit.cover)),
+                  ),
+                  Text("MISFIT LEARNING",style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black
+                  ),),
+
+                ],
               ),
             ),
             Row(
               children: [
-
                 SizedBox(
                   width: 40.0,
                 ),
@@ -64,36 +78,56 @@ class DesktopNavbar extends StatelessWidget {
                 SizedBox(
                   width: 40.0,
                 ),
-                InkWell(
-                  onTap: () async {
-                    const url = 'https://medium.com/@viveky259259';
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not launch $url';
-                    }
-                  },
-                  child: Text(
-                    'ABOUT US',
-                    style: TextStyle(
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Colors.black,
+                        width: 2.0,
+                        style: BorderStyle.solid),
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  padding: EdgeInsets.all(10.0),
+                  child: InkWell(
+                    onTap: () async {
+                      const url = 'https://medium.com/@viveky259259';
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
+                    child: Text(
+                      'ABOUT US',
+                      style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
                   ),
                 ),
                 SizedBox(
                   width: 40.0,
                 ),
-                InkWell(
-                  onTap: () {
-                    Navigator.of(context).pushReplacementNamed('/contact');
-                  },
-                  child: Text(
-                    'CONTACT',
-                    style: TextStyle(
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Colors.black,
+                        width: 2.0,
+                        style: BorderStyle.solid),
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  padding: EdgeInsets.all(10.0),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed('/contact');
+                    },
+                    child: Text(
+                      'CONTACT',
+                      style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
                   ),
                 )
               ],
@@ -108,102 +142,120 @@ class DesktopNavbar extends StatelessWidget {
 class PhoneNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          InkWell(
-            onTap: () {
-              Navigator.of(context).pushReplacementNamed('/home');
-            },
-            child: FlutterLogo(
-              colors: Colors.green,
-              size: 40.0,
+    return Container(
+      decoration: BoxDecoration(
+          color: Colors.white
+      ),
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            InkWell(
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/home');
+              },
+              child: Row(
+                children: [
+                  Container(
+                    width: 95.0,
+                    height: 55.0,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Logo%20(1).png'),
+                            fit: BoxFit.cover)),
+                  ),
+                  Text("MISFIT LEARNING",style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black
+                  ),),
+                ],
+              ),
             ),
-          ),
-          SizedBox(
-            height: 40.0,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/projects');
-                },
-                child: Text(
-                  'PROJECTS',
-                  style: TextStyle(
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.greenAccent),
+            SizedBox(
+              height: 20.0,
+            ),
+            Row(
+              children: [
+//                InkWell(
+//                  onTap: () async {
+//                    const url =
+//                        'https://www.youtube.com/channel/UCGF8TZgxizDN3MDSulUP5bg';
+//                    if (await canLaunch(url)) {
+//                      await launch(url);
+//                    } else {
+//                      throw 'Could not launch $url';
+//                    }
+//                  },
+//                  child: Text(
+//                    'YOUTUBE',
+//                    style: TextStyle(
+//                        fontSize: 18.0,
+//                        fontWeight: FontWeight.bold,
+//                        color: Colors.greenAccent),
+//                  ),
+//                ),
+                SizedBox(
+                  width: 40.0,
                 ),
-              ),
-              SizedBox(
-                width: 40.0,
-              ),
-              InkWell(
-                onTap: () async {
-                  const url =
-                      'https://www.youtube.com/channel/UCGF8TZgxizDN3MDSulUP5bg';
-                  if (await canLaunch(url)) {
-                    await launch(url);
-                  } else {
-                    throw 'Could not launch $url';
-                  }
-                },
-                child: Text(
-                  'YOUTUBE',
-                  style: TextStyle(
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.greenAccent),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Colors.black,
+                        width: 2.0,
+                        style: BorderStyle.solid),
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  padding: EdgeInsets.all(10.0),
+                  child: InkWell(
+                    onTap: () async {
+                      const url = 'https://medium.com/@viveky259259';
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
+                    child: Text(
+                      'ABOUT US',
+                      style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
+                  ),
                 ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 40.0,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              InkWell(
-                onTap: () async {
-                  const url = 'https://medium.com/@viveky259259';
-                  if (await canLaunch(url)) {
-                    await launch(url);
-                  } else {
-                    throw 'Could not launch $url';
-                  }
-                },
-                child: Text(
-                  'BLOG',
-                  style: TextStyle(
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.greenAccent),
+                SizedBox(
+                  width: 40.0,
                 ),
-              ),
-              SizedBox(
-                width: 40.0,
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/contact');
-                },
-                child: Text(
-                  'CONTACT',
-                  style: TextStyle(
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.greenAccent),
-                ),
-              )
-            ],
-          )
-        ],
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Colors.black,
+                        width: 2.0,
+                        style: BorderStyle.solid),
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  padding: EdgeInsets.all(10.0),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed('/contact');
+                    },
+                    child: Text(
+                      'CONTACT',
+                      style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

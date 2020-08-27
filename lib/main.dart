@@ -1,3 +1,4 @@
+import 'package:app/Contact/contact.dart';
 import 'package:app/Home/home.dart';
 import 'package:app/Navbar/navbar.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,10 @@ class MyApp extends StatelessWidget {
       title: 'WORKSHOP',
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
+      routes: <String, WidgetBuilder>{
+        '/home': (BuildContext context) => new MyApp(),
+        '/contact': (BuildContext context) => new ContactPage(),
+      },
     );
   }
 }
@@ -39,7 +44,26 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
 
-      body:ListView(children: [Navbar(),Home(),Speakers()], )
+      body:ListView(
+        children: [
+        Navbar(),
+        Home(),
+      LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth > 800) {
+            return SizedBox(
+              height: 40.0,
+            );
+          } else {
+            return SizedBox(
+              height: 20.0,
+            );
+          }
+        },
+      ),
+
+        Speakers(),
+        ], )
 
     );
   }
