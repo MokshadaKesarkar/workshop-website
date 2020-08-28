@@ -1671,7 +1671,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                         borderRadius: BorderRadius.circular(20.0),
                         image: DecorationImage(
                             image: NetworkImage(
-                                'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/IMG_20200220_113123-01.jpeg'),
+                                'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/teju-web.jpg'),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(
@@ -1722,30 +1722,6 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Java',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Dart',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Javascript',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
                     ],
                   ),
                   SizedBox(
@@ -1766,23 +1742,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'App Development',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
                           'Machine Learning',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Web Development',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -1807,15 +1767,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Flutter',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Django',
+                          'Tensorflow',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
