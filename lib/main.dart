@@ -18,6 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'WORKSHOP',
       home: MyHomePage(),
+      theme: ThemeData(
+        fontFamily: 'Shanti'
+      ),
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
         '/home': (BuildContext context) => new MyApp(),
@@ -65,6 +68,9 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       ),
         Speakers(),
+          SizedBox(
+            height: 20.0,
+          )
         ], )
 
     );

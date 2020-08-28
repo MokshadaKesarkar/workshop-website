@@ -53,9 +53,15 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
     width: width,
     height: height,
     decoration: BoxDecoration(
-      color: Colors.black
+      color: Colors.black,
+      border: Border.all(
+          color: Colors.lightBlueAccent,
+          width: 5.0,
+          style: BorderStyle.solid),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     padding: EdgeInsets.all(20.0),
+    margin: EdgeInsets.all(20.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -261,7 +267,7 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.linkedin.com/in/vivek-yadav-665823129/';
+                                  'https://www.linkedin.com/in/nikhil-naidu-2a3932183';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -274,7 +280,7 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -282,7 +288,7 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://twitter.com/viveky259259';
+                              const url = 'https://twitter.com/nikhilnaidun9n?s=09';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -295,7 +301,7 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -304,7 +310,7 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.instagram.com/viveky259/';
+                                  'https://instagram.com/_nikhil_naidu?igshid=tn9lh1jxhsm2/';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -317,7 +323,7 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/instagram-sketched.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -325,7 +331,7 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://github.com/viveky259259';
+                              const url = 'https://github.com/NikhilNaidu9';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -333,11 +339,11 @@ Widget buildNikhilCard(String name, String desc,  List<String> skills, BuildCont
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(18.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/github.png'),
@@ -382,12 +388,26 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
     width: width,
     height: height,
     decoration: BoxDecoration(
-        color: Colors.black
+      color: Colors.black,
+      border: Border.all(
+          color: Colors.lightBlueAccent,
+          width: 5.0,
+          style: BorderStyle.solid),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     padding: EdgeInsets.all(20.0),
+    margin: EdgeInsets.all(20.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Container(
+          height: 2.0,
+          width: width - 150,
+          decoration: BoxDecoration(color: Colors.lightBlueAccent),
+        ),
+        SizedBox(
+          height: 50.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -567,7 +587,7 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.linkedin.com/in/vivek-yadav-665823129/';
+                                  'https://www.linkedin.com/in/aakanksha-bomble-a032621b1';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -580,7 +600,7 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -588,7 +608,7 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://twitter.com/viveky259259';
+                              const url = 'https://twitter.com/AakankshaBomble?s=08';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -601,7 +621,7 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -610,7 +630,7 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.instagram.com/viveky259/';
+                                  'https://instagram.com/akan_kshaaaa_?igshid=n0atu2nwngjq';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -623,7 +643,7 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/instagram-sketched.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -631,7 +651,7 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://github.com/viveky259259';
+                              const url = 'https://github.com/aakankshabomble';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -639,11 +659,11 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(18.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/github.png'),
@@ -663,12 +683,12 @@ Widget buildAakankshaCard(String name, String desc,  List<String> skills, BuildC
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"The world and the community has provided us with a lot of things, it\'s our duty to return our favours"',
+            '"One day or day one it\'s your choice"',
             style: TextStyle(color: Colors.white, fontSize: 27.0),
           ),
         ),
         SizedBox(
-          height: 10.0,
+          height: 50.0,
         ),
         Container(
           height: 2.0,
@@ -688,12 +708,26 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
     width: width,
     height: height,
     decoration: BoxDecoration(
-        color: Colors.black
+      color: Colors.black,
+      border: Border.all(
+          color: Colors.lightBlueAccent,
+          width: 5.0,
+          style: BorderStyle.solid),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     padding: EdgeInsets.all(20.0),
+    margin: EdgeInsets.all(20.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Container(
+          height: 2.0,
+          width: width - 150,
+          decoration: BoxDecoration(color: Colors.lightBlueAccent),
+        ),
+        SizedBox(
+          height: 50.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -872,7 +906,7 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.linkedin.com/in/vivek-yadav-665823129/';
+                                  'https://www.linkedin.com/in/pravin-choudhary-70294a169/';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -885,7 +919,7 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -893,7 +927,7 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://twitter.com/viveky259259';
+                              const url = 'https://twitter.com/Pravinc53784341';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -906,7 +940,7 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -915,7 +949,7 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.instagram.com/viveky259/';
+                                  'https://instagram.com/pravinnatsu?igshid=sb0yzwsa11rf';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -928,7 +962,7 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/instagram-sketched.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -936,7 +970,7 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://github.com/viveky259259';
+                              const url = 'https://github.com/pravinnatsu';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -944,11 +978,11 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(18.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/github.png'),
@@ -968,12 +1002,12 @@ Widget buildPravinCard(String name, String desc,  List<String> skills, BuildCont
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"The world and the community has provided us with a lot of things, it\'s our duty to return our favours"',
+            '"Whenever I learn something new. I try to teach someone the same thing. What I found my knowledge get 10x each time i do that',
             style: TextStyle(color: Colors.white, fontSize: 27.0),
           ),
         ),
         SizedBox(
-          height: 10.0,
+          height: 50.0,
         ),
         Container(
           height: 2.0,
@@ -993,12 +1027,26 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
     width: width,
     height: height,
     decoration: BoxDecoration(
-        color: Colors.black
+      color: Colors.black,
+      border: Border.all(
+          color: Colors.lightBlueAccent,
+          width: 5.0,
+          style: BorderStyle.solid),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     padding: EdgeInsets.all(20.0),
+    margin: EdgeInsets.all(20.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Container(
+          height: 2.0,
+          width: width - 150,
+          decoration: BoxDecoration(color: Colors.lightBlueAccent),
+        ),
+        SizedBox(
+          height: 50.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -1078,15 +1126,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Dart',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Javascript',
+                          'C++',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -1127,7 +1167,15 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Web Development',
+                          'UI Designing',
+                          style:
+                          TextStyle(color: Colors.white, fontSize: 20.0),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10.0),
+                        child: Text(
+                          'Embedded System',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -1152,15 +1200,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Flutter',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Django',
+                          'Tensorflow',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -1177,7 +1217,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.linkedin.com/in/vivek-yadav-665823129/';
+                                  'https://www.linkedin.com/in/akash-tripathi-42063a1b1';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1190,7 +1230,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1198,7 +1238,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://twitter.com/viveky259259';
+                              const url = 'https://twitter.com/AKASHTR40592675?s=09';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1211,7 +1251,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1220,7 +1260,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.instagram.com/viveky259/';
+                                  'https://instagram.com/tripathiakash7?igshid=1mrf8lelyaedl';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1233,7 +1273,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/instagram-sketched.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1241,7 +1281,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://github.com/viveky259259';
+                              const url = 'https://github.com/Akashtripathi7';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1249,11 +1289,11 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(18.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/github.png'),
@@ -1273,12 +1313,12 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"The world and the community has provided us with a lot of things, it\'s our duty to return our favours"',
+            '"MY DREAM IS TO LOOK  BACK AND SAY "I MADE IT""',
             style: TextStyle(color: Colors.white, fontSize: 27.0),
           ),
         ),
         SizedBox(
-          height: 10.0,
+          height: 50.0,
         ),
         Container(
           height: 2.0,
@@ -1298,12 +1338,26 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
     width: width,
     height: height,
     decoration: BoxDecoration(
-        color: Colors.black
+      color: Colors.black,
+      border: Border.all(
+          color: Colors.lightBlueAccent,
+          width: 5.0,
+          style: BorderStyle.solid),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     padding: EdgeInsets.all(20.0),
+    margin: EdgeInsets.all(20.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Container(
+          height: 2.0,
+          width: width - 150,
+          decoration: BoxDecoration(color: Colors.lightBlueAccent),
+        ),
+        SizedBox(
+          height: 50.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -1383,19 +1437,12 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Dart',
+                          'C',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Javascript',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
+
                     ],
                   ),
                   SizedBox(
@@ -1429,14 +1476,6 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Web Development',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
                     ],
                   ),
                   SizedBox(
@@ -1457,15 +1496,7 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Flutter',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Django',
+                          'Tensorflow',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -1482,7 +1513,7 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.linkedin.com/in/vivek-yadav-665823129/';
+                                  'https://www.linkedin.com/in/mokshada-kesarkar-9446371b1';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1495,7 +1526,7 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1503,7 +1534,7 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://twitter.com/viveky259259';
+                              const url = 'https://twitter.com/MokshadaKesark1?s=08';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1516,7 +1547,7 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1525,7 +1556,7 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.instagram.com/viveky259/';
+                                  'https://instagram.com/_mokshada?igshid=g9toyu3o9nji';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1538,7 +1569,7 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/instagram-sketched.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1546,7 +1577,7 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://github.com/viveky259259';
+                              const url = 'https://github.com/MokshadaKesarkar';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1554,11 +1585,11 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(18.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/github.png'),
@@ -1578,12 +1609,12 @@ Widget buildMokshCard(String name, String desc,  List<String> skills, BuildConte
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"The world and the community has provided us with a lot of things, it\'s our duty to return our favours"',
+            '"Change your thoughts and you change your world"',
             style: TextStyle(color: Colors.white, fontSize: 27.0),
           ),
         ),
         SizedBox(
-          height: 10.0,
+          height: 50.0,
         ),
         Container(
           height: 2.0,
@@ -1603,12 +1634,26 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
     width: width,
     height: height,
     decoration: BoxDecoration(
-        color: Colors.black
+      color: Colors.black,
+      border: Border.all(
+          color: Colors.lightBlueAccent,
+          width: 5.0,
+          style: BorderStyle.solid),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     padding: EdgeInsets.all(20.0),
+    margin: EdgeInsets.all(20.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Container(
+          height: 2.0,
+          width: width - 150,
+          decoration: BoxDecoration(color: Colors.lightBlueAccent),
+        ),
+        SizedBox(
+          height: 50.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -1787,7 +1832,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.linkedin.com/in/vivek-yadav-665823129/';
+                                  'https://www.linkedin.com/in/tejashree-jadhav-30292b1b4';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1800,7 +1845,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1808,7 +1853,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://twitter.com/viveky259259';
+                              const url = 'https://twitter.com/Tejashr78699068?s=09';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1821,7 +1866,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1830,7 +1875,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.instagram.com/viveky259/';
+                                  'https://instagram.com/_tejuuuuu_?igshid=ljcl7i1iatci';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1843,7 +1888,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/instagram-sketched.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -1851,7 +1896,7 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://github.com/viveky259259';
+                              const url = 'https://github.com/tejashreejadhav1307';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -1859,11 +1904,11 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(18.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/github.png'),
@@ -1883,12 +1928,12 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"The world and the community has provided us with a lot of things, it\'s our duty to return our favours"',
+            '"Be the change you want to see the world"',
             style: TextStyle(color: Colors.white, fontSize: 27.0),
           ),
         ),
         SizedBox(
-          height: 10.0,
+          height: 50.0,
         ),
         Container(
           height: 2.0,
@@ -1908,12 +1953,26 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
     width: width,
     height: height,
     decoration: BoxDecoration(
-        color: Colors.black
+      color: Colors.black,
+      border: Border.all(
+          color: Colors.lightBlueAccent,
+          width: 5.0,
+          style: BorderStyle.solid),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     padding: EdgeInsets.all(20.0),
+    margin: EdgeInsets.all(20.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Container(
+          height: 2.0,
+          width: width - 150,
+          decoration: BoxDecoration(color: Colors.lightBlueAccent),
+        ),
+        SizedBox(
+          height: 50.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -1993,7 +2052,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Dart',
+                          'C',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -2001,7 +2060,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Javascript',
+                          'C++',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -2042,7 +2101,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Web Development',
+                          'Embedded System',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -2067,15 +2126,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Flutter',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Django',
+                          'Tensorflow',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -2092,7 +2143,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.linkedin.com/in/vivek-yadav-665823129/';
+                                  'https://www.linkedin.com/in/reethik-thota';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -2105,7 +2156,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -2113,7 +2164,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://twitter.com/viveky259259';
+                              const url = 'https://twitter.com/ReethikThota?s=08';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -2126,7 +2177,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -2135,7 +2186,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.instagram.com/viveky259/';
+                                  'https://instagram.com/reethik.remo?igshid=1fqjhia7n2yo6';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -2148,7 +2199,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/instagram-sketched.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -2156,7 +2207,7 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://github.com/viveky259259';
+                              const url = 'https://github.com/reethik';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -2164,11 +2215,11 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(18.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/github.png'),
@@ -2188,12 +2239,12 @@ Widget buildReethikCard(String name, String desc,  List<String> skills, BuildCon
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"The world and the community has provided us with a lot of things, it\'s our duty to return our favours"',
+            '"Make life lighter, expect less and stay a fighter"',
             style: TextStyle(color: Colors.white, fontSize: 27.0),
           ),
         ),
         SizedBox(
-          height: 10.0,
+          height: 50.0,
         ),
         Container(
           height: 2.0,
@@ -2213,12 +2264,26 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
     width: width,
     height: height,
     decoration: BoxDecoration(
-        color: Colors.black
+      color: Colors.black,
+      border: Border.all(
+          color: Colors.lightBlueAccent,
+          width: 5.0,
+          style: BorderStyle.solid),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     padding: EdgeInsets.all(20.0),
+    margin: EdgeInsets.all(20.0),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Container(
+          height: 2.0,
+          width: width - 150,
+          decoration: BoxDecoration(color: Colors.lightBlueAccent),
+        ),
+        SizedBox(
+          height: 50.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -2239,6 +2304,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                                 'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/IMG-20200524-WA0003-01.jpeg'),
                             fit: BoxFit.cover)),
                   ),
+
                   SizedBox(
                     height: 30.0,
                   ),
@@ -2298,15 +2364,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Dart',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Javascript',
+                          'C++',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -2331,23 +2389,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'App Development',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
                           'Machine Learning',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Web Development',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -2372,15 +2414,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'Flutter',
-                          style:
-                          TextStyle(color: Colors.white, fontSize: 20.0),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                        child: Text(
-                          'Django',
+                          'Tensorflow',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -2397,7 +2431,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.linkedin.com/in/vivek-yadav-665823129/';
+                                  'https://www.linkedin.com/in/riddhi-kadam-36a6421b1';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -2410,7 +2444,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/linkedin.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/linkedin.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -2418,7 +2452,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://twitter.com/viveky259259';
+                              const url = 'https://twitter.com/RiddhiKadam4?s=08';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -2431,7 +2465,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/twitter.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/twitter.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -2440,7 +2474,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                         InkWell(
                             onTap: () async {
                               const url =
-                                  'https://www.instagram.com/viveky259/';
+                                  'https://instagram.com/kadam_riddhi?igshid=ekkeychlrwmd';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -2453,7 +2487,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          'https://raw.githubusercontent.com/NikhilNaidu9/self-portfolio/master/assets/instagram.png'),
+                                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/instagram-sketched.png'),
                                       fit: BoxFit.cover)),
                             )),
                         SizedBox(
@@ -2461,7 +2495,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                         ),
                         InkWell(
                             onTap: () async {
-                              const url = 'https://github.com/viveky259259';
+                              const url = 'https://github.com/RIDDHI235';
                               if (await canLaunch(url)) {
                                 await launch(url);
                               } else {
@@ -2469,11 +2503,11 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
                               }
                             },
                             child: Container(
-                              width: 50.0,
-                              height: 50.0,
+                              width: 40.0,
+                              height: 40.0,
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(18.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                         'https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/github.png'),
@@ -2493,12 +2527,12 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"The world and the community has provided us with a lot of things, it\'s our duty to return our favours"',
+            '"All our dreams can come true, if we have the courage to pursue them."',
             style: TextStyle(color: Colors.white, fontSize: 27.0),
           ),
         ),
         SizedBox(
-          height: 10.0,
+          height: 50.0,
         ),
         Container(
           height: 2.0,
@@ -2509,6 +2543,7 @@ Widget buildRiddhiCard(String name, String desc,  List<String> skills, BuildCont
     ),
   );
 }
+
 class PhoneAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

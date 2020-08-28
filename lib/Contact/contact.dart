@@ -7,7 +7,7 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(color: Colors.black),
+        decoration: BoxDecoration(color: Colors.white),
         child: ListView(
           children: [
             Navbar(),
@@ -28,11 +28,23 @@ class ContactForm extends StatelessWidget {
     return LayoutBuilder(builder: (context, constraints) {
       if (constraints.maxWidth > 1000) {
         return SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              DesktopContact(),
-            ],
+          child: Container(
+            decoration: BoxDecoration(
+                border: Border.all(
+                    color: Colors.lightBlueAccent,
+                    width: 5.0,
+                    style: BorderStyle.solid),
+                borderRadius: BorderRadius.circular(20.0),
+                color: Colors.black
+            ),
+            padding: EdgeInsets.symmetric(vertical: 25.0),
+            margin: EdgeInsets.symmetric(horizontal: 25.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                DesktopContact(),
+              ],
+            ),
           ),
         );
       } else {
