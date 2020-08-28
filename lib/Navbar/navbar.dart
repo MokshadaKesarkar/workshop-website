@@ -88,13 +88,8 @@ class DesktopNavbar extends StatelessWidget {
                   ),
                   padding: EdgeInsets.all(10.0),
                   child: InkWell(
-                    onTap: () async {
-                      const url = 'https://medium.com/@viveky259259';
-                      if (await canLaunch(url)) {
-                        await launch(url);
-                      } else {
-                        throw 'Could not launch $url';
-                      }
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed('/about');
                     },
                     child: Text(
                       'ABOUT US',

@@ -3,6 +3,8 @@ import 'package:app/Home/home.dart';
 import 'package:app/Navbar/navbar.dart';
 import 'package:flutter/material.dart';
 
+import 'About/about.dart';
+import 'About/about1.dart';
 import 'Home/speakers.dart';
 
 void main() {
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/home': (BuildContext context) => new MyApp(),
         '/contact': (BuildContext context) => new ContactPage(),
+        '/about': (BuildContext context) => new AboutPage(),
       },
     );
   }
@@ -61,7 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
           }
         },
       ),
-
         Speakers(),
         ], )
 
