@@ -1126,7 +1126,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'C++',
+                          'C',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -1313,7 +1313,7 @@ Widget buildAkashCard(String name, String desc,  List<String> skills, BuildConte
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0),
           child: Text(
-            '"MY DREAM IS TO LOOK  BACK AND SAY "I MADE IT"',
+            'MY DREAM IS TO LOOK  BACK AND SAY "I MADE IT"',
             style: TextStyle(color: Colors.white, fontSize: 27.0),
           ),
         ),
@@ -1722,6 +1722,22 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
                       ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10.0),
+                        child: Text(
+                          'Java',
+                          style:
+                          TextStyle(color: Colors.white, fontSize: 20.0),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10.0),
+                        child: Text(
+                          'C',
+                          style:
+                          TextStyle(color: Colors.white, fontSize: 20.0),
+                        ),
+                      ),
                     ],
                   ),
                   SizedBox(
@@ -1768,6 +1784,14 @@ Widget buildTejuCard(String name, String desc,  List<String> skills, BuildContex
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
                           'Tensorflow',
+                          style:
+                          TextStyle(color: Colors.white, fontSize: 20.0),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10.0),
+                        child: Text(
+                          'Flutter',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),
@@ -3370,7 +3394,7 @@ class PhoneAbout extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: Text(
-                          'C++',
+                          'C',
                           style:
                           TextStyle(color: Colors.white, fontSize: 20.0),
                         ),

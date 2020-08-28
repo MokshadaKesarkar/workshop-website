@@ -57,7 +57,7 @@ class DesktopHome extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text("5 DAY WORKSHOP TO REMODEL YOUR ABILITIES \n         COMBINED WITH TECH CONFERENCE",style: TextStyle(
+                  Text("5 DAY WORKSHOP TO REMODEL YOUR TECHNICAL ABILITIES \n               COMBINED WITH TECH CONFERENCE",style: TextStyle(
                       fontSize: 27.0,
                       fontWeight: FontWeight.bold,
                       color: Colors.white
