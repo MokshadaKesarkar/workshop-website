@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -142,7 +141,7 @@ class PhoneNavbar extends StatelessWidget {
           color: Colors.white
       ),
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -174,24 +173,6 @@ class PhoneNavbar extends StatelessWidget {
             ),
             Row(
               children: [
-//                InkWell(
-//                  onTap: () async {
-//                    const url =
-//                        'https://www.youtube.com/channel/UCGF8TZgxizDN3MDSulUP5bg';
-//                    if (await canLaunch(url)) {
-//                      await launch(url);
-//                    } else {
-//                      throw 'Could not launch $url';
-//                    }
-//                  },
-//                  child: Text(
-//                    'YOUTUBE',
-//                    style: TextStyle(
-//                        fontSize: 18.0,
-//                        fontWeight: FontWeight.bold,
-//                        color: Colors.greenAccent),
-//                  ),
-//                ),
                 SizedBox(
                   width: 40.0,
                 ),
@@ -205,13 +186,8 @@ class PhoneNavbar extends StatelessWidget {
                   ),
                   padding: EdgeInsets.all(10.0),
                   child: InkWell(
-                    onTap: () async {
-                      const url = 'https://medium.com/@viveky259259';
-                      if (await canLaunch(url)) {
-                        await launch(url);
-                      } else {
-                        throw 'Could not launch $url';
-                      }
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed('/about');
                     },
                     child: Text(
                       'ABOUT US',

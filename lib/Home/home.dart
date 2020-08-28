@@ -1,13 +1,14 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth > 800) {
+        if (constraints.maxWidth > 1000) {
           return DesktopHome();
         } else {
           return PhoneHome();
@@ -23,7 +24,7 @@ class DesktopHome extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
-      height: height-55,
+      height: height - 100,
       width: width,
       decoration: BoxDecoration(
         border: Border.all(
@@ -77,9 +78,15 @@ class DesktopHome extends StatelessWidget {
                     ),
                     padding: EdgeInsets.all(10.0),
                     child: InkWell(
-                      onTap: () {
-                        Navigator.of(context).pushReplacementNamed('/contact');
-                      },
+                      onTap: () async {
+                          const url =
+                              'https://forms.gle/4JoADPV3JXvxCUty5';
+                          if (await canLaunch(url)) {
+                            await launch(url);
+                          } else {
+                            throw 'Could not launch $url';
+                          }
+                        },
                       child: Center(
                         child: Text(
                           'ENROLL NOW',
@@ -118,7 +125,7 @@ class PhoneHome extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
-      height: height,
+      height: 550.0,
       width: width,
       decoration: BoxDecoration(
           border: Border.all(
@@ -174,14 +181,20 @@ class PhoneHome extends StatelessWidget {
                     ),
                     padding: EdgeInsets.all(10.0),
                     child: InkWell(
-                      onTap: () {
-                        Navigator.of(context).pushReplacementNamed('/contact');
+                      onTap: () async {
+                        const url =
+                            'https://forms.gle/4JoADPV3JXvxCUty5';
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
                       },
                       child: Center(
                         child: Text(
                           'ENROLL NOW',
                           style: TextStyle(
-                              fontSize: 18.0,
+                              fontSize: 15.0,
                               fontWeight: FontWeight.bold,
                               color: Colors.white),
                         ),

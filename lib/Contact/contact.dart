@@ -6,17 +6,24 @@ class ContactPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(color: Colors.white),
-        child: ListView(
-          children: [
-            Navbar(),
-            Padding(
+      body: ListView(
+        children: [
+          Navbar(),
+          Container(
+            decoration: BoxDecoration(color: Colors.black,
+              border: Border.all(
+                  color: Colors.lightBlueAccent,
+                  width: 5.0,
+                  style: BorderStyle.solid),
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            margin: EdgeInsets.all(20.0),
+            child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: ContactForm(),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -31,7 +38,7 @@ class ContactForm extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
                 border: Border.all(
-                    color: Colors.lightBlueAccent,
+                    color: Colors.black,
                     width: 5.0,
                     style: BorderStyle.solid),
                 borderRadius: BorderRadius.circular(20.0),
@@ -82,7 +89,7 @@ class DesktopContact extends StatelessWidget {
     return Container(
       width: 550.0,
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.white, width: 2.0),
+          border: Border.all(color: Colors.lightBlueAccent, width: 2.0),
           borderRadius: BorderRadius.circular(20.0)),
       child: Padding(
         padding: const EdgeInsets.all(40.0),
@@ -102,21 +109,21 @@ class DesktopContact extends StatelessWidget {
             ),
             TextField(
               controller: nameController,
-              cursorColor: Colors.lightBlueAccent,
+              cursorColor: Colors.white,
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 icon: Icon(
                   Icons.person,
-                  color: Colors.lightBlueAccent,
+                  color: Colors.white,
                   size: 27.0,
                 ),
                 labelText: 'NAME',
                 labelStyle: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.lightBlueAccent),
+                    fontWeight: FontWeight.bold, color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                    borderSide: BorderSide(color: Colors.white)),
                 border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                    borderSide: BorderSide(color: Colors.white)),
               ),
             ),
             SizedBox(
@@ -124,21 +131,21 @@ class DesktopContact extends StatelessWidget {
             ),
             TextField(
               controller: emailController,
-              cursorColor: Colors.lightBlueAccent,
+              cursorColor: Colors.white,
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 icon: Icon(
                   Icons.alternate_email,
-                  color: Colors.lightBlueAccent,
+                  color: Colors.white,
                   size: 27.0,
                 ),
                 labelText: 'EMAIL',
                 labelStyle: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.lightBlueAccent),
+                    fontWeight: FontWeight.bold, color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                    borderSide: BorderSide(color: Colors.white)),
                 border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                    borderSide: BorderSide(color: Colors.white)),
               ),
             ),
             SizedBox(
@@ -148,22 +155,22 @@ class DesktopContact extends StatelessWidget {
               height: 120.0,
               child: TextField(
                 controller: messageController,
-                cursorColor: Colors.lightBlueAccent,
+                cursorColor: Colors.white,
                 style: TextStyle(color: Colors.white),
                 maxLines: 10,
                 decoration: InputDecoration(
                   icon: Icon(
                     Icons.message,
-                    color: Colors.lightBlueAccent,
+                    color: Colors.white,
                     size: 27.0,
                   ),
                   labelText: 'MESSAGE',
                   labelStyle: TextStyle(
-                      fontWeight: FontWeight.bold, color: Colors.lightBlueAccent),
+                      fontWeight: FontWeight.bold, color: Colors.white),
                   enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                      borderSide: BorderSide(color: Colors.white)),
                   border: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                      borderSide: BorderSide(color: Colors.white)),
                 ),
               ),
             ),
@@ -229,7 +236,7 @@ class PhoneContact extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width - 70,
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.white, width: 2.0),
+          border: Border.all(color: Colors.lightBlueAccent, width: 2.0),
           borderRadius: BorderRadius.circular(20.0)),
       child: Padding(
         padding: const EdgeInsets.all(27.0),
@@ -249,21 +256,21 @@ class PhoneContact extends StatelessWidget {
             ),
             TextField(
               controller: nameController,
-              cursorColor: Colors.lightBlueAccent,
+              cursorColor: Colors.white,
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 icon: Icon(
                   Icons.person,
-                  color: Colors.lightBlueAccent,
+                  color: Colors.white,
                   size: 18.0,
                 ),
                 labelText: 'NAME',
                 labelStyle: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.lightBlueAccent),
+                    fontWeight: FontWeight.bold, color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                    borderSide: BorderSide(color: Colors.white)),
                 border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                    borderSide: BorderSide(color: Colors.white)),
               ),
             ),
             SizedBox(
@@ -271,21 +278,21 @@ class PhoneContact extends StatelessWidget {
             ),
             TextField(
               controller: emailController,
-              cursorColor: Colors.lightBlueAccent,
+              cursorColor: Colors.white,
               style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 icon: Icon(
                   Icons.alternate_email,
-                  color: Colors.lightBlueAccent,
+                  color: Colors.white,
                   size: 18.0,
                 ),
                 labelText: 'EMAIL',
                 labelStyle: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.lightBlueAccent),
+                    fontWeight: FontWeight.bold, color: Colors.white),
                 enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                    borderSide: BorderSide(color: Colors.white)),
                 border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                    borderSide: BorderSide(color: Colors.white)),
               ),
             ),
             SizedBox(
@@ -295,22 +302,22 @@ class PhoneContact extends StatelessWidget {
               height: 120.0,
               child: TextField(
                 controller: messageController,
-                cursorColor: Colors.lightBlueAccent,
+                cursorColor: Colors.white,
                 style: TextStyle(color: Colors.white),
                 maxLines: 10,
                 decoration: InputDecoration(
                   icon: Icon(
                     Icons.message,
-                    color: Colors.lightBlueAccent,
+                    color: Colors.white,
                     size: 18.0,
                   ),
                   labelText: 'MESSAGE',
                   labelStyle: TextStyle(
-                      fontWeight: FontWeight.bold, color: Colors.lightBlueAccent),
+                      fontWeight: FontWeight.bold, color: Colors.white),
                   enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                      borderSide: BorderSide(color: Colors.white)),
                   border: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.lightBlueAccent)),
+                      borderSide: BorderSide(color: Colors.white)),
                 ),
               ),
             ),

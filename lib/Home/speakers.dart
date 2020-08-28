@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Speakers extends StatelessWidget {
   @override
@@ -50,9 +51,9 @@ class DesktopSpeakers extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SpeakerCard(context, "Suresh Choudhary", "https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-16-25-27-19_254de13a4bc8758c9908fff1f73e3725-01.jpeg", "IT Security", ""),
-                SpeakerCard(context, "Vivek Yadav", "https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/profile.jpeg", "Flutter Developer", ""),
-                SpeakerCard(context, "Anmol Jindal", "https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-16-38-26-48_254de13a4bc8758c9908fff1f73e3725-01.jpeg", "    Deep Learning \nArtificial Intelligence ", "")
+                SpeakerCard(context, "Suresh Choudhary", "https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-16-25-27-19_254de13a4bc8758c9908fff1f73e3725-01.jpeg", "Software Development", "https://www.linkedin.com/in/mrsureshchoudhary/"),
+                SpeakerCard(context, "Vivek Yadav", "https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/profile.jpeg", "Flutter Developer", "https://www.linkedin.com/in/viveky259/"),
+                SpeakerCard(context, "Anmol Jindal", "https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-16-38-26-48_254de13a4bc8758c9908fff1f73e3725-01.jpeg", "    Deep Learning \nArtificial Intelligence ", "https://www.linkedin.com/in/anmoljindal/")
               ],
             ),
           ],
@@ -107,36 +108,46 @@ class DesktopSpeakers extends StatelessWidget {
             color: Colors.lightBlueAccent
         ),),
         SizedBox(height: 25.0),
-        Container(
-          height:50.0,
-          width:170.0 ,
-        decoration: BoxDecoration(
-          color: Colors.black,
-          border: Border.all(
-              color: Colors.lightBlueAccent,
-              width: 2.0,
-              style: BorderStyle.solid),
-          borderRadius: BorderRadius.circular(20.0),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Text("Know More",style: TextStyle(
-                fontSize: 16.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white
-            ),),
-            Container(
-              width: 35.0,
-              height: 35.0,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: NetworkImage(
-                          'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-17-02-13-94.png'),
-                      fit: BoxFit.cover)),
-            ),
-          ],
-        ),)
+        InkWell(
+          onTap: () async {
+            String url = socialUrl;
+            if (await canLaunch(url)) {
+              await launch(url);
+            } else {
+              throw 'Could not launch $url';
+            }
+          },
+          child: Container(
+            height:50.0,
+            width:170.0 ,
+          decoration: BoxDecoration(
+            color: Colors.black,
+            border: Border.all(
+                color: Colors.lightBlueAccent,
+                width: 2.0,
+                style: BorderStyle.solid),
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Text("Know More",style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white
+              ),),
+              Container(
+                width: 35.0,
+                height: 35.0,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage(
+                            'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-17-02-13-94.png'),
+                        fit: BoxFit.cover)),
+              ),
+            ],
+          ),),
+        )
 
       ],),
     );
@@ -150,7 +161,7 @@ class PhoneSpeakers extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
-      height: height * 2.5,
+      height: 1550.0,
       width: width,
       decoration: BoxDecoration(
           border: Border.all(
@@ -183,15 +194,15 @@ class PhoneSpeakers extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SpeakerCard(context, "Suresh Choudhary", "https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-16-25-27-19_254de13a4bc8758c9908fff1f73e3725-01.jpeg", "IT Security", ""),
+                SpeakerCard(context, "Suresh Choudhary", "https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-16-25-27-19_254de13a4bc8758c9908fff1f73e3725-01.jpeg", "Software Developer", "https://www.linkedin.com/in/mrsureshchoudhary/"),
                 SizedBox(
-                  height: 20.0,
+                  height: 30.0,
                 ),
-                SpeakerCard(context, "Vivek Yadav", "https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/profile.jpeg", "Flutter Developer", ""),
+                SpeakerCard(context, "Vivek Yadav", "https://raw.githubusercontent.com/NikhilNaidu9/portfolio-website/master/assets/images/profile.jpeg", "Flutter Developer", "https://www.linkedin.com/in/viveky259/"),
                 SizedBox(
-                  height: 20.0,
+                  height: 30.0,
                 ),
-                SpeakerCard(context, "Anmol Jindal", "https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-16-38-26-48_254de13a4bc8758c9908fff1f73e3725-01.jpeg", "    Deep Learning \nArtificial Intelligence ", "")
+                SpeakerCard(context, "Anmol Jindal", "https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-16-38-26-48_254de13a4bc8758c9908fff1f73e3725-01.jpeg", "    Deep Learning \nArtificial Intelligence ", "https://www.linkedin.com/in/anmoljindal/")
               ],
             ),
           ],
@@ -204,7 +215,7 @@ class PhoneSpeakers extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
-      height: height - 200,
+      height: 450.0,
       width: width/1.5,
       decoration: BoxDecoration(
         color: Colors.black,
@@ -245,37 +256,46 @@ class PhoneSpeakers extends StatelessWidget {
             color: Colors.lightBlueAccent
         ),),
         SizedBox(height: 25.0),
-        Container(
-          height:50.0,
-          width:170.0 ,
-          decoration: BoxDecoration(
-            color: Colors.black,
-            border: Border.all(
-                color: Colors.lightBlueAccent,
-                width: 2.0,
-                style: BorderStyle.solid),
-            borderRadius: BorderRadius.circular(20.0),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Text("Know More",style: TextStyle(
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white
-              ),),
-              Container(
-                width: 35.0,
-                height: 35.0,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: NetworkImage(
-                            'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-17-02-13-94.png'),
-                        fit: BoxFit.cover)),
-              ),
-            ],
-          ),)
-
+        InkWell(
+          onTap: () async {
+            String url = socialUrl;
+            if (await canLaunch(url)) {
+              await launch(url);
+            } else {
+              throw 'Could not launch $url';
+            }
+          },
+          child: Container(
+            height:50.0,
+            width:170.0 ,
+            decoration: BoxDecoration(
+              color: Colors.black,
+              border: Border.all(
+                  color: Colors.lightBlueAccent,
+                  width: 2.0,
+                  style: BorderStyle.solid),
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text("Know More",style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white
+                ),),
+                Container(
+                  width: 35.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: NetworkImage(
+                              'https://raw.githubusercontent.com/MokshadaKesarkar/workshop-website/master/assets/Screenshot_2020-08-27-17-02-13-94.png'),
+                          fit: BoxFit.cover)),
+                ),
+              ],
+            ),),
+        )
       ],),
     );
   }
